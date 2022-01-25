@@ -3,13 +3,13 @@ import { v4 as uuidv4 } from "uuid";
 import { type } from "@testing-library/user-event/dist/type";
 
 const initialState = {
-    todos: [{ id: 1, task:"Wake Up", completed: false}],
+    todos: [{ id: 1, task: "Wake Up", completed: false}],
 };
 
 const todosReducer = (state = initialState, action) => {
     switch (action.type) {
         case types.ADD_TODO: 
-        const newTodo ={
+        const newTodo =   {
             id: uuidv4(),
             task: action.payload,
             completed: false,
@@ -52,4 +52,4 @@ const todosReducer = (state = initialState, action) => {
     }
 };
 
-export default todosReducer;
+export default todosReducer; 

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Todo.css";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -28,7 +28,7 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
          ) : (
          <CSSTransition key="normal" timeout={500} className="task-text">
              <li className="Todo-task" onClick={toggleTodo}>
-                 {task}
+             {task}
              </li>
          </CSSTransition>
          )}

@@ -1,5 +1,5 @@
-import './App.css';
-import { useSelector } from 'react-redux';
+import "./App.css";
+import { useSelector } from "react-redux";
 import TodoList from "./components/TodoList";
 
 function App() {
