@@ -27,7 +27,7 @@ const todosReducer = (state = initialState, action) => {
                 todos: filterTodo,
             };
             case types.UPDATE_TODO:
-                const updateTodos = state.todos.map((todo) => {
+                const updatedTodos = state.todos.map((todo) => {
                     if (todo.id === action.payload.id) {
                     return {...todo, task: action.payload.updatedTask };
                 }
@@ -35,7 +35,7 @@ const todosReducer = (state = initialState, action) => {
             });
             return {
                 ...state,
-                todos: updateTodos,
+                todos: updatedTodos,
             }
         case types.COMPLETE_TODO:
             const toggleTodos = state.todos.map((t) =>

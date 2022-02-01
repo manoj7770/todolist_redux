@@ -22,7 +22,7 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
              value={editTask}
             onChange={(e) => setEditTask(e.target.value)}
             />
-            <button>Save</button>
+            <button onClick={updateTodo}>Save</button>
         </from>
              </CSSTransition>
          ) : (
